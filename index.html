@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALVORIYA Student Club | Innovating the Future</title>
+  <meta name="description"
+    content="Welcome to ALVORIYA, the premier student club for technology, leadership, and innovation. Discover our vision, activities, and upcoming events.">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <!-- Ionicons for scalable vector icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+  <!-- Intro Video Splash Screen -->
+  <div id="intro-video-overlay">
+    <video id="intro-video" muted playsinline autoplay>
+      <source src="vidalvoriya.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <button id="skip-intro" class="btn btn-outline">Skip Intro</button>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="https://alvoriyagroup-2026.netlify.app" style="text-decoration: none;">
+      <div class="logo">ALVORI<span class="gradient-text">YA</span>.</div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="vision.html">Vision</a></li>
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="index.html#moments">Events</a></li>
+      <li><a href="organization.html">Organization</a></li>
+      <li><a href="registration.html" class="btn btn-primary" style="padding: 0.5rem 1.5rem; margin-top: -0.5rem; font-size: 0.9rem;">Join Us</a></li>
+    </ul>
+    <button class="mobile-menu-btn">
+      <ion-icon name="menu-outline"></ion-icon>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" style="padding-top: 15vh; min-height: 70vh;">
+    <div class="hero-content fade-in-up" style="max-width: 900px; margin: 0 auto; text-align: center;">
+      <h1 class="title-center">Shaping Tomorrow's <br> <span class="text-gold">Leaders</span> Today</h1>
+      <p class="subtitle-center">We are ALVORIYA, a community of passionate learners driven by curiosity, collaboration,
+        and a desire to make a lasting impact on our campus.</p>
+      <div class="hero-buttons" style="display: flex; gap: 1rem; justify-content: center;">
+        <a href="#programs" class="btn btn-primary" style="margin: 0;">Discover Activities</a>
+        <a href="organization.html" class="btn btn-outline" style="margin: 0;">Meet the Board</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Programs -->
+  <section id="programs" style="padding: 60px 5%; min-height: auto;">
+    <h2 class="title-center fade-in-up">Our Programs</h2>
+    <p class="subtitle-center fade-in-up" style="margin-bottom: 2rem;">Discover how we grow and build together</p>
+    <div class="grid-3" style="max-width: 1100px; margin: 0 auto;">
+      <!-- Card 1 -->
+      <div class="glass-panel relative fade-in-up delay-1" style="padding: 3rem 2rem; text-align: center;">
+        <div class="popular-ribbon">POPULAR</div>
+        <div class="program-icon">
+          <ion-icon name="rocket-outline"></ion-icon>
+        </div>
+        <h3 style="margin-bottom: 0.5rem; font-size: 1.4rem;">Innovation Lab</h3>
+        <p style="font-size: 0.95rem;">Build real-world projects and startup ideas with your team.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="glass-panel fade-in-up delay-2" style="padding: 3rem 2rem; text-align: center;">
+        <div class="program-icon">
+          <ion-icon name="mic-outline"></ion-icon>
+        </div>
+        <h3 style="margin-bottom: 0.5rem; font-size: 1.4rem;">Workshop Series</h3>
+        <p style="font-size: 0.95rem;">Learn directly from experts through hands-on sessions.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="glass-panel fade-in-up delay-3" style="padding: 3rem 2rem; text-align: center;">
+        <div class="program-icon">
+          <ion-icon name="leaf-outline"></ion-icon>
+        </div>
+        <h3 style="margin-bottom: 0.5rem; font-size: 1.4rem;">Leadership Program</h3>
+        <p style="font-size: 0.95rem;">Develop your leadership mindset and communication skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Moments at ALVORIYA -->
+  <section id="moments" style="padding: 60px 5%; min-height: auto;">
+    <h2 class="title-center fade-in-up">Moments <span style="font-weight: 300;">at</span> ALVORIYA</h2>
+    <div class="gallery-grid fade-in-up delay-1" style="margin-top: 3rem;">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Moment 1">
+      <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Moment 2">
+      <img src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Moment 3">
+      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Moment 4">
+      <img src="https://images.unsplash.com/photo-1528605105345-5344ea20e269?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Moment 5">
+      <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Moment 6">
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-dark" style="margin-top: 40px;">
+    <h2 class="fade-in-up">Want <span style="font-weight: 300;">to</span> be part of these experiences?</h2>
+    <p class="fade-in-up delay-1">Join ALVORIYA and start your journey today.</p>
+    <a href="registration.html" class="btn btn-primary fade-in-up delay-2">Join Now</a>
+  </section>
+
+  <!-- Dark Footer -->
+  <footer class="footer-dark">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>ALVORI<span class="gradient-text">YA</span>.</h4>
+        <p style="color: #bbb;">Empowering the next generation of campus leaders through technology and innovation.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="https://alvoriyagroup-2026.netlify.app" style="color: #bbb;">Home</a></li>
+          <li><a href="#programs" style="color: #bbb;">About Us</a></li>
+          <li><a href="organization.html" style="color: #bbb;">Our Board</a></li>
+          <li><a href="#moments" style="color: #bbb;">Moments</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul style="color: #bbb;">
+          <li><ion-icon name="location-outline"></ion-icon> President University</li>
+          <li><ion-icon name="mail-outline"></ion-icon> Alvoriya@protonmail.com</li>
+          <li><ion-icon name="call-outline"></ion-icon> +62 (856) 9403 - 9829</li>
+        </ul>
+        <div class="social-links">
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+          <a href="https://www.instagram.com/alvoriya/?utm_source=ig_web_button_share_sheet" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p style="color: #777;">&copy;
+        <script>document.write(new Date().getFullYear())</script> ALVORIYA. All application and.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

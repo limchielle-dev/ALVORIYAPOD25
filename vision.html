@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision | ALVORIYA Student Club</title>
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <style>
+    .vision-hero {
+      padding-top: 15vh;
+      min-height: 60vh;
+      text-align: center;
+      position: relative;
+    }
+    .check-list {
+      list-style: none;
+      padding: 0;
+    }
+    .check-list li {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: var(--text-muted);
+    }
+    .check-list ion-icon {
+      color: #eab308;
+      font-size: 1.5rem;
+    }
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 992px) {
+      .grid-4 { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 576px) {
+      .grid-4 { grid-template-columns: 1fr; }
+    }
+    .glow-line {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0; left: 0;
+      background: radial-gradient(circle at center, rgba(184, 134, 11, 0.05) 0%, transparent 60%);
+      z-index: -1;
+      pointer-events: none;
+    }
+    .nav-links a.btn-primary::after {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" style="text-decoration: none;">
+      <div class="logo">ALVORI<span class="gradient-text">YA</span>.</div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="vision.html" class="active">Vision</a></li>
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="index.html#moments">Events</a></li>
+      <li><a href="organization.html">Organization</a></li>
+      <li><a href="registration.html" class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; margin-top: -0.5rem;">Join Us</a></li>
+    </ul>
+    <button class="mobile-menu-btn">
+      <ion-icon name="menu-outline"></ion-icon>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="vision-hero">
+    <div class="glow-line"></div>
+    <div class="hero-content fade-in-up" style="max-width: 800px; margin: 0 auto;">
+      <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Our <span class="text-gold">Vision</span></h2>
+      <h1 class="hero-title" style="font-size: 3.5rem; margin-bottom: 1.5rem;">Shaping <span class="text-gold">Future</span><br>Leaders Through Innovation</h1>
+      <p class="subtitle-center" style="font-size: 1.2rem;">We aim to create a generation of impactful<br>and forward-thinking students.</p>
+      <a href="activities.html" class="btn btn-primary" style="margin-top: 1rem;">Discover Activities</a>
+    </div>
+  </section>
+
+  <!-- Vision & Mission -->
+  <section style="padding: 60px 5%; min-height: auto;">
+    <div class="grid-2 fade-in-up" style="max-width: 1000px; margin: 0 auto; gap: 4rem;">
+      <div style="text-align: center;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Vision</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8;">To build a strong community of innovators contributing positively to our campus and beyond.</p>
+      </div>
+      <div>
+        <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; text-align: center;">Mission</h2>
+        <ul class="check-list" style="max-width: 300px; margin: 0 auto;">
+          <li><ion-icon name="checkmark-circle"></ion-icon> Provide impactful programs.</li>
+          <li><ion-icon name="checkmark-circle"></ion-icon> Encourage collaboration.</li>
+          <li><ion-icon name="checkmark-circle"></ion-icon> Develop leadership skills.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values -->
+  <section style="padding: 60px 5%; min-height: auto; background: rgba(184, 134, 11, 0.02);">
+    <h2 class="title-center fade-in-up" style="margin-bottom: 3rem;">Our Values</h2>
+    <div class="grid-4 fade-in-up delay-1" style="max-width: 1200px; margin: 0 auto;">
+      <!-- Value 1 -->
+      <div class="glass-panel" style="padding: 2.5rem 1.5rem; text-align: center;">
+        <div class="program-icon" style="font-size: 3rem;">
+          <ion-icon name="rocket-outline"></ion-icon>
+        </div>
+        <h3 style="margin-bottom: 0.5rem; font-size: 1.3rem;">Innovation</h3>
+        <p style="font-size: 0.9rem;">We embrace creativity and new ideas.</p>
+      </div>
+      <!-- Value 2 -->
+      <div class="glass-panel" style="padding: 2.5rem 1.5rem; text-align: center;">
+        <div class="program-icon" style="font-size: 3rem;">
+          <ion-icon name="handshake-outline"></ion-icon>
+        </div>
+        <h3 style="margin-bottom: 0.5rem; font-size: 1.3rem;">Collaboration</h3>
+        <p style="font-size: 0.9rem;">We value teamwork and partnership.</p>
+      </div>
+      <!-- Value 3 -->
+      <div class="glass-panel" style="padding: 2.5rem 1.5rem; text-align: center;">
+        <div class="program-icon" style="font-size: 3rem;">
+          <ion-icon name="leaf-outline"></ion-icon>
+        </div>
+        <h3 style="margin-bottom: 0.5rem; font-size: 1.3rem;">Growth</h3>
+        <p style="font-size: 0.9rem;">We focus on continuous self-improvement.</p>
+      </div>
+      <!-- Value 4 -->
+      <div class="glass-panel" style="padding: 2.5rem 1.5rem; text-align: center;">
+        <div class="program-icon" style="font-size: 3rem;">
+          <ion-icon name="flame-outline"></ion-icon>
+        </div>
+        <h3 style="margin-bottom: 0.5rem; font-size: 1.3rem;">Leadership</h3>
+        <p style="font-size: 0.9rem;">We believe empowering future leaders.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Exists -->
+  <section style="padding: 80px 5%; min-height: auto;">
+    <div style="max-width: 600px; margin: 0 auto; text-align: center;" class="fade-in-up">
+      <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Why ALVORIYA Exists</h2>
+      <p style="font-size: 1.1rem; line-height: 1.8;">We believe students need a platform to explore, grow, and make a real impact on campus. ALVORIYA is here to inspire and guide passionate individuals to become the leaders of tomorrow.</p>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-dark" style="margin-top: 20px; padding: 100px 20px;">
+    <h2 class="fade-in-up">Be part of <span class="text-gold">our vision</span></h2>
+    <p class="fade-in-up delay-1">Join ALVORIYA and succeed.</p>
+    <a href="registration.html" class="btn btn-primary fade-in-up delay-2">Join Us</a>
+  </section>
+
+  <!-- Dark Footer -->
+  <footer class="footer-dark" style="margin-top: 0;">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>ALVORI<span class="gradient-text">YA</span>.</h4>
+        <p style="color: #bbb;">Empowering the next generation of campus leaders through technology and innovation.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="https://alvoriyagroup-2026.netlify.app" style="color: #bbb;">Home</a></li>
+          <li><a href="vision.html" style="color: #bbb;">Vision</a></li>
+          <li><a href="organization.html" style="color: #bbb;">Our Board</a></li>
+          <li><a href="index.html#moments" style="color: #bbb;">Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul style="color: #bbb;">
+          <li><ion-icon name="location-outline"></ion-icon> President University</li>
+          <li><ion-icon name="mail-outline"></ion-icon> Alvoriya@protonmail.com</li>
+          <li><ion-icon name="call-outline"></ion-icon> +62 (856) 9403 - 9829</li>
+        </ul>
+        <div class="social-links">
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+          <a href="https://www.instagram.com/alvoriya/?utm_source=ig_web_button_share_sheet" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p style="color: #777;">&copy;
+        <script>document.write(new Date().getFullYear())</script> ALVORIYA. All application and.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

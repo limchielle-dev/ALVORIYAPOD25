@@ -1,0 +1,10 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/register.php"
+  to = "/success.html"
+  status = 301
+
+[forms]
+  notification_email = "Alvoriya@protonmail.com"

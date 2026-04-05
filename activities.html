@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activities | ALVORIYA Student Club</title>
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <style>
+    /* Journey Timeline Styles */
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      width: 2px;
+      background: #e2e8f0;
+      top: 0;
+      bottom: 0;
+      left: 31px;
+      margin-left: -1px;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2rem;
+      padding-left: 80px;
+    }
+    .timeline-marker {
+      position: absolute;
+      left: 20px;
+      top: 5px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--primary-color);
+      border: 4px solid #fff;
+      box-shadow: 0 0 0 2px #e2e8f0;
+      z-index: 1;
+    }
+    .timeline-dot {
+      position: absolute;
+      left: 27px;
+      top: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--primary-color);
+      z-index: 1;
+    }
+    .timeline-year {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .timeline-year::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #e2e8f0;
+    }
+    .timeline-entry {
+      background: transparent;
+      padding: 0;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .month-badge {
+      font-weight: 700;
+      color: #111;
+      min-width: 40px;
+    }
+    .event-dash {
+      color: #b8860b;
+    }
+    .nav-links a.btn-primary::after {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation (Updated) -->
+  <nav>
+    <a href="index.html" style="text-decoration: none;">
+      <div class="logo">ALVORI<span class="gradient-text">YA</span>.</div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="vision.html">Vision</a></li>
+      <li><a href="activities.html" class="active">Activities</a></li>
+      <li><a href="index.html#moments">Events</a></li>
+      <li><a href="organization.html">Organization</a></li>
+      <li><a href="registration.html" class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; margin-top: -0.5rem;">Join Us</a></li>
+    </ul>
+    <button class="mobile-menu-btn">
+      <ion-icon name="menu-outline"></ion-icon>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section style="padding-top: 15vh; min-height: 40vh; text-align: center; position: relative;">
+    <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: radial-gradient(circle at top center, rgba(184, 134, 11, 0.05) 0%, transparent 70%); z-index: -1;"></div>
+    <div class="fade-in-up" style="max-width: 800px; margin: 0 auto; padding-top: 40px;">
+      <h1 class="hero-title" style="font-size: 3.5rem; margin-bottom: 1rem;">Our Activities</h1>
+      <p class="subtitle-center" style="font-size: 1.2rem;">Explore our programs and experiences</p>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section style="padding: 0 5% 60px; min-height: auto;">
+    <div class="grid-3" style="max-width: 1100px; margin: 0 auto;">
+      <!-- Card 1 -->
+      <div class="glass-panel relative fade-in-up delay-1" style="padding: 3rem 2rem; text-align: center;">
+        <div class="popular-ribbon">POPULAR</div>
+        <div class="program-icon">
+          <ion-icon name="rocket-outline"></ion-icon>
+        </div>
+        <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Innovation Lab</h3>
+        <p style="font-size: 0.95rem; margin-bottom: 1rem;">1 Month / 1 Month</p>
+        <p style="font-size: 0.85rem; font-weight: 600; background: rgba(184, 134, 11, 0.1); padding: 5px 10px; border-radius: 20px; display: inline-block; margin-bottom: 1.5rem;">Level: Beginner - Advanced</p>
+        <div>
+          <a href="registration.html" class="btn btn-primary" style="padding: 0.8rem 2rem;">Apply Now</a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="glass-panel fade-in-up delay-2" style="padding: 3rem 2rem; text-align: center;">
+        <div class="program-icon">
+          <ion-icon name="mic-outline"></ion-icon>
+        </div>
+        <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Workshop Series</h3>
+        <p style="font-size: 0.95rem;">Learn directly from experts through hands-on sessions.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="glass-panel fade-in-up delay-3" style="padding: 3rem 2rem; text-align: center;">
+        <div class="program-icon">
+          <ion-icon name="leaf-outline"></ion-icon>
+        </div>
+        <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Leadership Program</h3>
+        <p style="font-size: 0.95rem;">Develop your leadership mindset and communication skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Journey -->
+  <section style="padding: 60px 5%; min-height: auto;">
+    <h2 class="title-center fade-in-up" style="margin-bottom: 3rem;">Our Journey</h2>
+    <div class="timeline fade-in-up delay-1">
+      <!-- 2025 -->
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-year">2025</div>
+        <div class="timeline-entry">
+          <div class="timeline-dot" style="top: 54px;"></div>
+          <span class="month-badge">Jan</span> <span class="event-dash">&mdash;</span> <span>Workshop UI/UX</span>
+        </div>
+      </div>
+      <!-- Feb -->
+      <div class="timeline-item" style="margin-top: -1rem;">
+        <div class="timeline-marker"></div>
+        <div class="timeline-year">Feb</div>
+        <div class="timeline-entry">
+          <div class="timeline-dot" style="top: 54px;"></div>
+          <span class="month-badge">Feb</span> <span class="event-dash">&mdash;</span> <span>Tech Talk</span>
+        </div>
+      </div>
+      <!-- Mar -->
+      <div class="timeline-item" style="margin-top: -1rem;">
+        <div class="timeline-marker"></div>
+        <div class="timeline-year">Mar</div>
+        <div class="timeline-entry">
+          <div class="timeline-dot" style="top: 54px;"></div>
+          <span class="month-badge">Mar</span> <span class="event-dash">&mdash;</span> <span>Leadership Camp</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section style="padding: 60px 5%; min-height: auto;">
+    <div class="gallery-grid fade-in-up delay-1" style="margin-top: 1rem;">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Moment 1">
+      <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Moment 2">
+      <img src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Moment 3">
+      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Moment 4">
+      <img src="https://images.unsplash.com/photo-1528605105345-5344ea20e269?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Moment 5">
+      <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Moment 6">
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-dark" style="margin-top: 20px; padding: 100px 20px;">
+    <h2 class="fade-in-up">Ready to <span class="text-gold">join our activities?</span></h2>
+    <p class="fade-in-up delay-1">Join ALVORIYA and start your journey</p>
+    <a href="registration.html" class="btn btn-primary fade-in-up delay-2">Join Now</a>
+  </section>
+
+  <!-- Dark Footer -->
+  <footer class="footer-dark" style="margin-top: 0;">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>ALVORI<span class="gradient-text">YA</span>.</h4>
+        <p style="color: #bbb;">Empowering the next generation of campus leaders through technology and innovation.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="https://alvoriyagroup-2026.netlify.app" style="color: #bbb;">Home</a></li>
+          <li><a href="vision.html" style="color: #bbb;">Vision</a></li>
+          <li><a href="organization.html" style="color: #bbb;">Our Board</a></li>
+          <li><a href="index.html#moments" style="color: #bbb;">Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul style="color: #bbb;">
+          <li><ion-icon name="location-outline"></ion-icon> President University</li>
+          <li><ion-icon name="mail-outline"></ion-icon> Alvoriya@protonmail.com</li>
+          <li><ion-icon name="call-outline"></ion-icon> +62 (856) 9403 - 9829</li>
+        </ul>
+        <div class="social-links">
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+          <a href="https://www.instagram.com/alvoriya/?utm_source=ig_web_button_share_sheet" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p style="color: #777;">&copy;
+        <script>document.write(new Date().getFullYear())</script> ALVORIYA. All application and.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

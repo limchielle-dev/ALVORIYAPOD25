@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | ALVORIYA Student Club</title>
+    <meta name="description" content="Register to join the ALVORIYA Student Club. Explore our requirements and submit your application today.">
+    <link rel="stylesheet" href="styles.css?v=2">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        .split-hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4rem;
+            padding: 160px 5% 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .split-hero-content {
+            flex: 1;
+            max-width: 550px;
+        }
+        .split-hero-img-container {
+            flex: 1;
+            position: relative;
+        }
+        .split-hero-img {
+            width: 100%;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .form-card {
+            background: rgba(20, 20, 20, 0.45);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 4rem;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+        .feature-card {
+            background: rgba(20, 20, 20, 0.45);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 16px;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            border-color: rgba(212, 175, 55, 0.4);
+        }
+        .feature-icon {
+            font-size: 2.8rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        @media (max-width: 900px) {
+            .split-hero { flex-direction: column; text-align: center; padding-top: 120px; gap: 2rem; }
+            .split-hero-content { max-width: 100%; margin: 0 auto; }
+            .grid-4 { grid-template-columns: repeat(2, 1fr); }
+            .form-card { padding: 2.5rem 1.5rem; }
+        }
+        @media (max-width: 600px) {
+            .grid-4 { grid-template-columns: 1fr; }
+        }
+        .nav-links a.btn-primary::after { display: none !important; }
+        .hero-title-join {
+            font-size: 3.8rem;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+        .hero-subtitle-join {
+            font-size: 1.5rem;
+            color: #ddd;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+        .hero-desc-join {
+            font-size: 1.1rem;
+            color: #bbb;
+            line-height: 1.6;
+        }
+        .form-bg {
+            position: relative;
+            padding: 40px 5% 100px;
+        }
+        .form-bg::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at center 20%, rgba(212, 175, 55, 0.15) 0%, transparent 60%);
+            z-index: -1;
+            pointer-events: none;
+        }
+        .form-group label {
+            color: #333;
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .form-group input, .form-group textarea {
+            background: #fafafa;
+            border: 1px solid #eee;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            background: #fff;
+            border-color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" style="text-decoration: none;">
+            <div class="logo">ALVORI<span class="gradient-text">YA</span>.</div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vision.html">Vision</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="index.html#moments">Events</a></li>
+            <li><a href="organization.html">Organization</a></li>
+            <li><a href="registration.html" class="btn btn-primary active" style="padding: 0.5rem 1.5rem; margin-top: -0.5rem; font-size: 0.9rem;">Join Us</a></li>
+        </ul>
+        <button class="mobile-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="split-hero fade-in-up">
+        <div class="split-hero-content">
+            <h1 class="hero-title-join"><span style="color: #fff;">Join</span> <span class="text-gold">ALVORIYA</span></h1>
+            <h3 class="hero-subtitle-join">Ready to become part of something bigger?</h3>
+            <p class="hero-desc-join">
+                We are looking for passionate and driven students who are eager to grow and innovate. Fill out the form below to apply to join ALVORIYA.
+            </p>
+        </div>
+        <div class="split-hero-img-container">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Students collaborating" class="split-hero-img">
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <div class="form-bg" id="application-form">
+        <h2 class="title-center fade-in-up" style="margin-bottom: 2.5rem; font-size: 2.5rem;">Submit Your Application</h2>
+        <div class="form-card fade-in-up delay-1">
+            <form action="register.php" method="POST" name="registration">
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="full_name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label>Student ID</label>
+                        <input type="text" name="student_id" placeholder="Student ID" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" name="phone_number" placeholder="Phone Number" required>
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label>Major</label>
+                        <input type="text" name="major" placeholder="Major" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Batch</label>
+                        <input type="text" name="batch" placeholder="Batch" required>
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label>Motivation</label>
+                        <textarea name="motivation" placeholder="Motivation" style="height: 120px;" required></textarea>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label>Skills</label>
+                        <textarea name="skills" placeholder="Skills" style="height: 120px;"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-submit-container" style="flex-direction: column; align-items: center; gap: 1rem; margin-top: 2rem;">
+                    <button type="submit" class="btn-submit" style="padding: 1.1rem 3.5rem; font-size: 1.1rem;">Submit Application</button>
+                    <p style="font-size: 0.85rem; color: #888; text-align: center;">*We will contact you via email after reviewing your application.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Why Join ALVORIYA -->
+    <section style="padding: 60px 5%; background: transparent;">
+        <h2 class="title-center fade-in-up" style="margin-bottom: 0.5rem; font-size: 2.2rem;">Why Join ALVORIYA?</h2>
+        <p class="subtitle-center fade-in-up" style="margin-bottom: 3.5rem; font-size: 1.15rem;">Unlock Your Full Potential</p>
+        
+        <div class="grid-4 fade-in-up delay-1" style="max-width: 1200px; margin: 0 auto;">
+            <!-- Card 1 -->
+            <div class="feature-card">
+                <div class="feature-icon"><ion-icon name="flag-outline"></ion-icon></div>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">Build Leadership Skills</h3>
+                <p style="font-size: 0.9rem; color: #cbd5e1; line-height: 1.5;">Develop and enhance your leadership abilities.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="feature-card">
+                <div class="feature-icon"><ion-icon name="people-circle-outline"></ion-icon></div>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">Expand Your Network</h3>
+                <p style="font-size: 0.9rem; color: #cbd5e1; line-height: 1.5;">Connect with like-minded, driven students.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="feature-card">
+                <div class="feature-icon"><ion-icon name="rocket-outline"></ion-icon></div>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">Get Real Experience</h3>
+                <p style="font-size: 0.9rem; color: #cbd5e1; line-height: 1.5;">Work on impactful projects and events.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="feature-card">
+                <div class="feature-icon"><ion-icon name="calendar-outline"></ion-icon></div>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">Access Exclusive Events</h3>
+                <p style="font-size: 0.9rem; color: #cbd5e1; line-height: 1.5;">Join members-only talks, workshops, and camps.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-dark" style="margin-top: 0; padding: 100px 20px;">
+        <h2 class="fade-in-up">Start Your <span class="text-gold">Journey</span> with ALVORIYA</h2>
+        <a href="#application-form" class="btn btn-primary fade-in-up delay-2" style="margin-top: 1.5rem;">Apply Now</a>
+    </section>
+
+    <!-- Dark Footer -->
+    <footer class="footer-dark" style="margin-top: 0;">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ALVORI<span class="gradient-text">YA</span>.</h4>
+                <p style="color: #bbb;">Empowering the next generation of campus leaders through technology and innovation.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="https://alvoriyagroup-2026.netlify.app" style="color: #bbb;">Home</a></li>
+                    <li><a href="vision.html" style="color: #bbb;">Vision</a></li>
+                    <li><a href="organization.html" style="color: #bbb;">Our Board</a></li>
+                    <li><a href="index.html#moments" style="color: #bbb;">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul style="color: #bbb;">
+                    <li><ion-icon name="location-outline"></ion-icon> President University</li>
+                    <li><ion-icon name="mail-outline"></ion-icon> Alvoriya@protonmail.com</li>
+                    <li><ion-icon name="call-outline"></ion-icon> +62 (856) 9403 - 9829</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+                    <a href="https://www.instagram.com/alvoriya/?utm_source=ig_web_button_share_sheet" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="color: #777;">&copy; <script>document.write(new Date().getFullYear())</script> ALVORIYA. All application and.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetEl = document.querySelector(targetId);
+                if(targetEl) {
+                    e.preventDefault();
+                    targetEl.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

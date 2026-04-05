@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Board | ALVORIYA Student Club</title>
+    <meta name="description" content="Meet the leadership board driving the ALVORIYA Student Club forward.">
+    <link rel="stylesheet" href="styles.css?v=2">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <style>
+        /* ── Organization Page Styles ── */
+        .org-section {
+            padding: 120px 5% 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .org-title {
+            text-align: center;
+            margin-bottom: 0.75rem;
+            font-size: 2.8rem;
+        }
+
+        .org-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            max-width: 580px;
+            margin: 0 auto 4rem;
+            font-size: 1.05rem;
+        }
+
+        /* ── Member Card ── */
+        .member-card {
+            background: rgba(20, 20, 20, 0.45);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: 20px;
+            padding: 2.5rem 1.5rem 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .member-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(184,134,11,0.12);
+            border-color: rgba(184,134,11,0.3);
+        }
+
+        /* Photo */
+        .member-photo-ring {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            padding: 4px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            margin-bottom: 1.4rem;
+            flex-shrink: 0;
+            box-shadow: 0 8px 24px rgba(184,134,11,0.25);
+        }
+
+        .member-photo-ring.large {
+            width: 180px;
+            height: 180px;
+            padding: 5px;
+        }
+
+        .member-photo-ring img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            display: block;
+        }
+
+        /* Name */
+        .member-name {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 0.35rem;
+            line-height: 1.3;
+        }
+
+        .member-card.ceo .member-name {
+            font-size: 1.6rem;
+        }
+
+        /* Role badge */
+        .member-role {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            padding: 0.3rem 0.9rem;
+            border-radius: 50px;
+            margin-bottom: 1rem;
+        }
+
+        /* Bio text */
+        .member-bio {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* ── CEO row ── */
+        .ceo-row {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
+
+        .ceo-row .member-card {
+            max-width: 380px;
+            width: 100%;
+        }
+
+        /* ── Grid ── */
+        .board-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.8rem;
+        }
+
+        @media (max-width: 900px) {
+            .board-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 560px) {
+            .board-grid { grid-template-columns: 1fr; }
+            .org-title  { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" style="text-decoration: none;">
+            <div class="logo">ALVORI<span class="gradient-text">YA</span>.</div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vision.html">Vision</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="index.html#moments">Events</a></li>
+            <li><a href="organization.html" class="active">Organization</a></li>
+            <li><a href="registration.html" class="btn btn-primary" style="padding: 0.5rem 1.5rem; margin-top: -0.5rem; font-size: 0.9rem;">Join Us</a></li>
+        </ul>
+        <button class="mobile-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+
+    <!-- Page Header -->
+    <div style="padding: 120px 5% 0; text-align:center;">
+        <h1 class="hero-title fade-in-up">Meet Our <span class="gradient-text">Leadership</span></h1>
+        <p class="hero-subtitle fade-in-up" style="max-width:580px; margin:1rem auto 0;">
+            The dedicated board working tirelessly behind the scenes to bring you the best club experience.
+        </p>
+    </div>
+
+    <!-- Board Members -->
+    <div class="org-section">
+
+        <!-- CEO & COO Row -->
+        <div class="ceo-row">
+            <!-- CEO -->
+            <div class="member-card ceo fade-in-up">
+                <div class="member-photo-ring large">
+                    <img src="CEO.jpg" alt="Halim">
+                </div>
+                <div class="member-name">Halim</div>
+                <span class="member-role">Chief Executive Officer / CEO</span>
+                <p class="member-bio"><strong>Halim</strong> oversees all club activities and relations, ensuring our vision translates into actionable initiatives.</p>
+            </div>
+
+            <!-- COO -->
+            <div class="member-card ceo fade-in-up">
+                <div class="member-photo-ring large">
+                    <img src="COO.jpeg" alt="Ailsa Chiara Damayanti">
+                </div>
+                <div class="member-name">Ailsa Chiara Damayanti</div>
+                <span class="member-role">Chief Operating Officer / COO</span>
+                <p class="member-bio"><strong>Ailsa</strong> coordinates workshops and manages internal communications, keeping the executive board aligned.</p>
+            </div>
+        </div>
+
+        <!-- All other members — uniform 3-column grid -->
+        <div class="board-grid">
+
+            <!-- Marketing Lead -->
+            <div class="member-card fade-in-up">
+                <div class="member-photo-ring">
+                    <img src="Marketing Lead.jpeg" alt="Imelda Eka Pratiwi">
+                </div>
+                <div class="member-name">Imelda Eka Pratiwi</div>
+                <span class="member-role">Marketing Lead</span>
+                <p class="member-bio"><strong>Imelda</strong> leads our marketing strategies, driving brand awareness and engagement across all channels.</p>
+            </div>
+
+            <!-- Finance & Admin Lead -->
+            <div class="member-card fade-in-up">
+                <div class="member-photo-ring">
+                    <img src="Finance &amp; Admin Lead.jpeg" alt="Sri Anggun Tessalonika">
+                </div>
+                <div class="member-name">Sri Anggun Tessalonika</div>
+                <span class="member-role">Finance &amp; Admin Lead</span>
+                <p class="member-bio"><strong>Sri</strong> manages club finances, budgeting, and administrative operations to ensure sustainability.</p>
+            </div>
+
+            <!-- Product Design Lead -->
+            <div class="member-card fade-in-up">
+                <div class="member-photo-ring">
+                    <img src="Product Design Lead.jpeg" alt="Fitriya">
+                </div>
+                <div class="member-name">Fitriya</div>
+                <span class="member-role">Product Design Lead</span>
+                <p class="member-bio"><strong>Fitriya</strong> leads our product design initiatives, crafting user-centered experiences.</p>
+            </div>
+
+            <!-- Digital Marketing Staff -->
+            <div class="member-card fade-in-up">
+                <div class="member-photo-ring">
+                    <img src="Digital Marketing Staff.jpeg" alt="Yasif Maulana">
+                </div>
+                <div class="member-name">Yasif Maulana</div>
+                <span class="member-role">Digital Marketing Staff</span>
+                <p class="member-bio"><strong>Yasif</strong> executes digital campaigns and manages social media analytics.</p>
+            </div>
+
+            <!-- Production Staff -->
+            <div class="member-card fade-in-up">
+                <div class="member-photo-ring">
+                    <img src="Production Staff.jpeg" alt="KevinAmadeuz Rizki">
+                </div>
+                <div class="member-name">KevinAmadeuz Rizki</div>
+                <span class="member-role">Production Staff</span>
+                <p class="member-bio"><strong>KevinAmadeuz</strong> manages product quality and production efficiency.</p>
+            </div>
+
+            <!-- Sales & Exhibition Staff -->
+            <div class="member-card fade-in-up">
+                <div class="member-photo-ring">
+                    <img src="Sales &amp; Exbition Staff.jpeg" alt="Azzam Zahra">
+                </div>
+                <div class="member-name">Azzam Zahra</div>
+                <span class="member-role">Sales &amp; Exhibition Staff</span>
+                <p class="member-bio"><strong>Azzam</strong> manages sales operations and coordinates exhibition events for the club.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ALVORI<span class="gradient-text">YA</span>.</h4>
+                <p>Empowering the next generation of campus leaders through technology and innovation.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="https://alvoriyagroup-2026.netlify.app">Home</a></li>
+                    <li><a href="index.html#vision">About Us</a></li>
+                    <li><a href="organization.html">Our Board</a></li>
+                    <li><a href="index.html#events">Upcoming Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><ion-icon name="location-outline"></ion-icon> President University</li>
+                    <li><ion-icon name="mail-outline"></ion-icon> Alvoriya@protonmail.com</li>
+                    <li><ion-icon name="call-outline"></ion-icon> +62 (856) 9403 - 9829</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-discord"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> ALVORIYA Student Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
